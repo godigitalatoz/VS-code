@@ -40,12 +40,13 @@ def mergeSort(array):
 # print the array
 def printList(array):
     for i in range(len(array)):
-        print(array[i], end="")
+        print(array[i], end=", ")
     print()
     
 # driver programe
-if'__name__' == '__main__':
-    array = [6, 5, 12, 10, 9, 1]
+if __name__ == '__main__':
+    array_str = input("Enter a list seperated by spaces: ")
+    array = list(map(int, array_str.split()))
     
     mergeSort(array)
     
