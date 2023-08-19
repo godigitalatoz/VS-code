@@ -30,3 +30,4 @@ def create_database(connection, querry):
         print(f"Error: '{err}'")
 create_database_querry = "CREATE DATABASE mysql_python"
 create_database(connection, create_database_querry)
+#
