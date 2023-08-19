@@ -7,10 +7,10 @@ mydb = mysql.connector.connect(
     database="mydatabase"
 )
 
-#mycursor = mydb.cursor()
+mycursor = mydb.cursor()
 
 #mycursor.execute("CREATE DATABASE mydatabase")
-#mycursor.execute("SHOW DATABASES")
+mycursor.execute("SHOW DATABASES")
 
-#for x in mycursor:
-    #print(x)
+for x in mycursor:
+    print(x)
